@@ -14,7 +14,7 @@ import com.google.android.material.transition.MaterialElevationScale
 
 class MainActivity : AppCompatActivity(){
     private lateinit var binding: ActivityMainBinding
-    lateinit var bt: FloatingActionButton
+
     val mFragment: Fragment?
         get() = supportFragmentManager.findFragmentById(R.id.fragment)
             ?.childFragmentManager
@@ -23,13 +23,11 @@ class MainActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+//        setContentView(R.layout.activity_main)
 
-//        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        var bt = findViewById<FloatingActionButton>(R.id.floatingActionButton)
-
-        bt.setOnClickListener{
+        binding.floatingActionButton.setOnClickListener{
             mFragment?.apply {
                 exitTransition = MaterialElevationScale(false).apply {
                     duration = 500
