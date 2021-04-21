@@ -35,5 +35,6 @@
                 android:text="TextView"
                 android:textSize="36sp" />
         </androidx.cardview.widget.CardView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

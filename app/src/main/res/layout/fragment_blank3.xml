@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:id="@+id/fm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="transition2"
+        tools:context=".BlankFragment3">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ACA68B"
+            android:text="@string/hello_blank_fragment" />
+
+    </FrameLayout>
+</layout>

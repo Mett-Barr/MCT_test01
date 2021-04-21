@@ -12,6 +12,7 @@ import androidx.navigation.NavDirections
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import com.example.mcttest01.databinding.FragmentBlankBinding
+import com.google.android.material.transition.MaterialArcMotion
 import com.google.android.material.transition.MaterialContainerTransform
 import com.google.android.material.transition.MaterialElevationScale
 import com.google.android.material.transition.MaterialFadeThrough
@@ -58,5 +59,17 @@ class BlankFragment : Fragment() {
             val direction = Nav()
             findNavController().navigate(direction, extras)
         }
+
+//        binding.floatingActionButton.setOnClickListener {
+//            exitTransition = MaterialElevationScale(false).apply {
+//                duration = 500
+//            }
+//            reenterTransition = MaterialElevationScale(true).apply {
+//                duration = 500
+//            }
+//
+//            val direction = Nav2()
+//            findNavController(R.id.fragment).navigate(direction)
+//        }
     }
 }
